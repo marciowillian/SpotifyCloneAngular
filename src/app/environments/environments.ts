@@ -8,7 +8,7 @@ export const SpotifyConfiguration = {
   redirectUrl: 'http://localhost:4200/login/',
   scopes: [
     "user-read-currently-playing", //Música tocando agora.
-    "user-read-recently-playing", //Ler músicas tocadas recentemente
+    "user-read-recently-played", //Ler músicas tocadas recentemente
     "user-read-playback-state", //Ler estado do playback do usuário
     "user-top-read", //Top artistas e músicas do usuário
     "user-modify-playback-state", //Alterar o player do usuário
