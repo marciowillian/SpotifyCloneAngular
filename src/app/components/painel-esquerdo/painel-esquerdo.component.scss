@@ -1,5 +1,8 @@
 @import 'variaveis';
-$h-spotufy-logo: 120px;
+$h-spotify-logo: 120px;
+$h-menu-opcoes: 150px;
+$m-entre-menus: 10px;
+//
 :host {
     max-width: 300px;
     min-height: 100vh;
@@ -14,9 +17,24 @@ $h-spotufy-logo: 120px;
         height: 100%;
         padding: 0px 40px 0px 40px;
         .image-container {
-            min-height: $h-spotufy-logo;
+            min-height: $h-spotify-logo;
             img {
                 width: 70%;
+            }
+        }
+        .menu-container {
+            width: 100%;
+            // &.flex {
+            //     flex-direction: column;
+            //     justify-content: flex-start;
+            //     align-items: center;
+            // }
+            &.opcoes {
+                min-height: $h-menu-opcoes;
+                flex-direction: column;
+                * {
+                    margin-bottom: $m-entre-menus;
+                }
             }
         }
     }
