@@ -5,13 +5,16 @@ import { RouterModule } from '@angular/router';
 import { PlayerRotas } from './player.routes';
 import { PainelEsquerdoComponent } from 'src/app/components/painel-esquerdo/painel-esquerdo.component';
 import { BotaoMenuComponent } from '../../components/botao-menu/botao-menu.component';
+import { RodapeUsuarioComponent } from '../../components/rodape-usuario/rodape-usuario.component';
+
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
     PlayerComponent,
     PainelEsquerdoComponent,
-    BotaoMenuComponent
+    BotaoMenuComponent,
+    RodapeUsuarioComponent,
   ],
   imports: [
     CommonModule,
