@@ -14,6 +14,17 @@
             <fa-icon [icon]="artistaIcone"></fa-icon>
         </app-botao-menu>
     </div>
+
+    <div class="menu-container flex">
+        <span class="playlist-titulo">
+            PLAYLISTS
+        </span>
+        <div class="playlist-scroll">
+            <app-botao-menu *ngFor="let playlist of playlists" [descricao]="playlist.nome" [selecionado]="menuSelecionado === playlist.id" (click)="botaoClick(playlist.id)">
+                <fa-icon [icon]="playlistIcon"></fa-icon>
+            </app-botao-menu>
+        </div>
+    </div>
 </div>
 <div class="usuario-info">
 
